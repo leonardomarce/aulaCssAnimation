@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <!--http://www.w3schools.com/css/css3_transitions.asp-->
 <html>
-    <head>
-        <title> Exemplo Transition</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    transition:
+        width 2s, 
+        height 2s, 
+        transform 2s, 
+         background-color  1s;
+}
+
+div:hover {
+    width: 400px;
+    height: 400px;
+    transform: rotate(180deg);
+    background-color:chartreuse;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div>Passe o mouse por cima!</div>
+</body>
 </html>
